@@ -9,7 +9,7 @@
                 <md-icon>menu</md-icon>
             </md-button>
 
-            <h2 class="md-title">My App</h2>
+            <h2 class="md-title">TODOS</h2>
         </md-toolbar>
 
         <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
@@ -19,9 +19,29 @@
                 </div>
             </md-toolbar>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate esse necessitatibus beatae nobis, deserunt ut est fugit, tempora deleniti, eligendi commodi doloribus. Nemo, assumenda possimus, impedit inventore perferendis iusto!</p>
+            <div class="phone-viewport">
+                <md-list>
+                    <md-list-item>
+                        <md-icon>move_to_inbox</md-icon> <span>Inbox</span>
+                    </md-list-item>
+
+                    <md-list-item>
+                        <md-icon>send</md-icon> <span>Sent Mail</span>
+                    </md-list-item>
+
+                    <md-list-item>
+                        <md-icon>delete</md-icon> <span>Trash</span>
+                    </md-list-item>
+
+                    <md-list-item>
+                        <md-icon>error</md-icon> <span>Spam</span>
+
+                        <md-divider class="md-inset"></md-divider>
+                    </md-list-item>
+
+                </md-list>
+            </div>
         </md-sidenav>
-        
     </div>
 </template>
 
