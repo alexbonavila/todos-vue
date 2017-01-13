@@ -9,11 +9,11 @@
     }
 </style>
 <script>
-    export default{
-        data(){
-            return{
-                msg:"TODOS API"
-            }
+    export default {
+      data () {
+        return {
+          msg: 'TODOS API'
         }
+      }
     }
 </script>
