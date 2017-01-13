@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # todos_vue
 
 > A Vue.js project
@@ -25,3 +26,6 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# todos-vue
+>>>>>>> 8cf180ad3cc59d6395e430466a768ce8e433c25b
