@@ -6,13 +6,17 @@ import App from './App'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 import VueRouter from 'vue-router'
+import Axios from 'axios'
 
-import Tokens from './components/Tokens.vue'
-import Todos from './components/Todos.vue'
+window.axios = Axios
+Vue.prototype.$http = Axios
+
+import Todos from 'components/Todos'
+import Tokens from 'components/Tokens'
 
 const routes = [
-    {path: '/tokens', component: Tokens},
-    {path: '/todos', component: Todos}
+    { path: '/todos', component: Todos },
+    { path: '/tokens', component: Tokens }
 ]
 
 const router = new VueRouter({
@@ -26,6 +30,6 @@ Vue.use(VueRouter)
 new Vue({
   el: '#app',
   template: '<App/>',
-  router: router,
-  components: { App }
+  components: { App },
+  router: router
 })

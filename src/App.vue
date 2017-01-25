@@ -19,29 +19,34 @@
                 </div>
             </md-toolbar>
 
-            <div class="phone-viewport">
-                <md-list>
-                    <md-list-item>
-                        <md-icon>move_to_inbox</md-icon> <span>Inbox</span>
-                    </md-list-item>
+            <md-list>
+                <md-list-item @click="toggleLeftSidenav">
+                    <md-icon>move_to_inbox</md-icon>
+                    <router-link exact to="/todos">Todos</router-link>
+                </md-list-item>
 
-                    <md-list-item>
-                        <md-icon>send</md-icon> <span>Sent Mail</span>
-                    </md-list-item>
+                <md-list-item @click="toggleLeftSidenav">
+                    <md-icon>send</md-icon> <router-link exact  to="/tokens" >Tokens</router-link>
+                </md-list-item>
 
-                    <md-list-item>
-                        <md-icon>delete</md-icon> <span>Trash</span>
-                    </md-list-item>
+                <md-list-item @click="toggleLeftSidenav">
+                    <md-avatar>
+                        <img src="https://placeimg.com/40/40/people/5" alt="People">
+                    </md-avatar>
 
-                    <md-list-item>
-                        <md-icon>error</md-icon> <span>Spam</span>
+                    <span>Contact example</span>
 
-                        <md-divider class="md-inset"></md-divider>
-                    </md-list-item>
+                    <md-button class="md-icon-button md-list-action">
+                        <md-icon class="md-primary">chat_bubble</md-icon>
+                    </md-button>
+                </md-list-item>
 
-                </md-list>
-            </div>
+
+            </md-list>
+
         </md-sidenav>
+
+        <router-view></router-view>
     </div>
 </template>
 
@@ -78,4 +83,10 @@
         color: #2c3e50;
         margin-top: 60px;
     }
+
+    a {
+       color: inherit;
+       text-decoration: none;
+    }
+
 </style>
