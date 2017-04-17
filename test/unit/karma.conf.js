@@ -31,10 +31,10 @@ var webpackConfig = merge(baseConfig, {
 // no need for app entry during tests
 delete webpackConfig.entry
 
-// Use babel for test files too
+// Use babel for test.vue files too
 webpackConfig.module.loaders.some(function (loader, i) {
   if (/^babel(-loader)?$/.test(loader.loader)) {
-    loader.include.push(path.resolve(projectRoot, 'test/unit'))
+    loader.include.push(path.resolve(projectRoot, 'test.vue/unit'))
     return true
   }
 })
