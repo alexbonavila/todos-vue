@@ -64,7 +64,6 @@
 </template>
 
 <script>
-  import auth from './services/auth'
   export default {
     name: 'app',
     methods: {
@@ -77,9 +76,6 @@
       close (ref) {
         // console.log('Closed: ' + ref)
       }
-    },
-    created () {
-      this.$http.defaults.headers.common['Authorization'] = 'Bearer ' + auth.getToken()
     }
   }
 </script>
