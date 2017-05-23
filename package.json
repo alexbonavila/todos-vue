@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "material-design-icons": "^3.0.1",
+    "roboto-fontface": "^0.7.0",
     "vue": "^2.1.0",
     "vue-material": "^0.6.3",
     "vue-router": "^2.1.1"
@@ -78,7 +80,9 @@
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
-    "webpack-merge": "^0.14.1"
+    "webpack-merge": "^0.14.1",
+    "material-design-icons": "^3.0.1",
+    "roboto-fontface": "^0.7.0"
   },
   "engines": {
     "node": ">= 4.0.0",
