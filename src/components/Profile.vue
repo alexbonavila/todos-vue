@@ -46,8 +46,7 @@
 <style>
 </style>
 <script>
-  var API_PROFILE_URL = 'http://todos.dev:8080/api/v1/user'
-  var STORAGE_KEY = 'todosvue_token'
+  import todosVue from '../todosVue'
   export default{
     data () {
       return {
@@ -71,8 +70,7 @@
     },
     methods: {
       fetchUserProfile: function () {
-        this.$http.defaults.headers.common['Authorization'] = 'Bearer ' + window.localStorage.getItem(STORAGE_KEY)
-        this.$http.get(API_PROFILE_URL).then((response) => {
+        this.$http.get(todosVue.API_PROFILE_URL).then((response) => {
           this.connecting = false
           console.log(response.data)
           this.id = response.data.id
