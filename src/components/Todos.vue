@@ -53,7 +53,7 @@
 <style>
 </style>
 <script>
-  var API_URL = 'http://todos.dev:8080/api/v1/task'
+  var API_URL = 'http://client.dev:8080/api/v1/task'
   var STORAGE_KEY = 'todosvue_token'
   export default{
     data () {

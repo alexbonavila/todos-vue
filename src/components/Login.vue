@@ -22,9 +22,9 @@
 </style>
 <script>
   var STORAGE_KEY = 'todosvue_token'
-  var AUTH_CLIENT_ID = 5
+  var AUTH_CLIENT_ID = 3
   var AUTH_REDIRECT_URI = 'http://localhost:8095/login'
-  var OAUTH_SERVER_URL = 'http://todos.dev:8080/oauth/authorize?'
+  var OAUTH_SERVER_URL = 'http://client.dev:8080/oauth/authorize?'
   export default{
     data () {
       return {
